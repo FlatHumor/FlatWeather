@@ -6,6 +6,9 @@ import android.content.Context;
 
 public class WeatherDbHelper extends SQLiteOpenHelper
 {
+    public static final String COL_ID = "id";
+    public static final String COL_LONGTITUDE = "longtitude";
+    
     private static final String DB_NAME = "weather.db";
     private Context context;
     
