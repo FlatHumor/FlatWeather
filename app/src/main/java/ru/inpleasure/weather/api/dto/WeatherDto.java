@@ -1,5 +1,6 @@
+package ru.inpleasure.weather.api.dto;
 
-package ru.inpleasure.weather.model.dbo;
+import java.util.List;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
