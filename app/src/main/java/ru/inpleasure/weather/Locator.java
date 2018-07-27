@@ -29,8 +29,7 @@ public class Locator implements LocationListener
     
     @Override
     public void onProviderEnabled(String provider) {
-        presenter.onLocationReceived(locationManager
-            .getLastKnownLocation(LocationManager.NETWORK_PROVIDER));
+        
     }
     
     @Override
@@ -39,7 +38,16 @@ public class Locator implements LocationListener
     @Override
     public void onStatusChanged(String s, int i, Bundle b) { }
     
-    public void start() {
+    public void start()
+    {
+        if (locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER) != null) {
+            presenter.onLocationReceived(locationManager.
+                getLastKnownLocation(LocationManager.NETWORK_PROVIDER));
+        }
+        if (!locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+            presenter.onLocationError();
+            return;
+        }
         locationManager.requestLocationUpdates(
             LocationManager.NETWORK_PROVIDER, TIME_INTERVAL,
             DISTANCE, this);
@@ -49,9 +57,8 @@ public class Locator implements LocationListener
         locationManager.removeUpdates(this);
     }
     
-    public void requestLocation() {
-        locationManager.requestSingleUpdate(
-            LocationManager.NETWORK_PROVIDER,
-            this, presenter.getLooper());
+    public Location getLocation() {
+        return locationManager.getLastKnownLocation(
+            LocationManager.NETWORK_PROVIDER);
     }
 }

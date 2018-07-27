@@ -2,10 +2,6 @@ package ru.inpleasure.weather.presenter;
 
 import android.content.Context;
 import android.location.Location;
-import android.os.Looper;
-import android.os.Process;
-import android.os.HandlerThread;
-
 import ru.inpleasure.weather.Contract;
 import ru.inpleasure.weather.Locator;
 
@@ -13,27 +9,17 @@ import ru.inpleasure.weather.Locator;
 public class WeatherPresenter
     implements Contract.Presenter
 {
-    private static final String THREAD_ARG = "PRESENTER_THREAD";
     private Context context;
-    private Looper looper;
-    private HandlerThread thread;
     private Contract.Model model;
     private Contract.View view;
     private Locator locator;
     
     
-    public WeatherPresenter(Context context) {
-        this.context = context;
+    public WeatherPresenter(Contract.View view) {
+        this.view = view;
+        context = view.getContext();
         locator = new Locator(this);
-        thread = new HandlerThread(THREAD_ARG,
-            Process.THREAD_PRIORITY_BACKGROUND);
         
-    }
-    
-    @Override
-    public Looper getLooper() {
-        thread.start();
-        return thread.getLooper();
     }
     
     @Override
@@ -43,8 +29,7 @@ public class WeatherPresenter
     
     @Override
     public void onDestroy() {
-        if (thread.isAlive())
-            thread.stop();
+        locator.stop();
     }
     
     @Override
@@ -54,11 +39,26 @@ public class WeatherPresenter
     
     @Override
     public void onRefreshButtonClick() {
-        
+        view.showText("getting location...");
+        locator.start();
     }
     
     @Override
     public void onLocationReceived(Location location) {
-        
+        if (location == null) {
+            view.showText("location is unavailable");
+            return;
+        }
+        double lat = location.getLatitude();
+        double lon = location.getLongitude();
+        String l = String.format("lon: %s, lat: %s", lon, lat);
+        view.showText(l);
+    }
+    
+    @Override
+    public void onLocationError()
+    {
+        view.showText("Location Error");
+        locator.stop();
     }
 }

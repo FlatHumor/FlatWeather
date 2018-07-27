@@ -129,8 +129,8 @@ public class WeatherDto
         this.cod = cod;
     }
 
-    public class Wind {
-
+    public class Wind
+    {
         @SerializedName("speed")
         @Expose
         private Double speed;
@@ -155,8 +155,8 @@ public class WeatherDto
         }
     }
 
-    public class Clouds {
-
+    public class Clouds
+    {
         @SerializedName("all")
         @Expose
         private Integer all;
@@ -171,8 +171,8 @@ public class WeatherDto
 
     }
 
-    public class Coord {
-
+    public class Coord
+    {
         @SerializedName("lon")
         @Expose
         private Integer lon;

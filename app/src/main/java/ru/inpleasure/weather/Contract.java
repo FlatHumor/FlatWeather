@@ -32,13 +32,15 @@ public interface Contract
         void onRefreshButtonClick();
         void onHistoryButtonClick();
         void onLocationReceived(Location location);
+        void onLocationError();
         Context getContext();
-        Looper getLooper();
         void onDestroy();
     }
     
     interface View
     {
+        Context getContext();
         void showWeatherIcon();
+        void showText(String text);
     }
 }
