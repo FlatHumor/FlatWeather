@@ -4,7 +4,7 @@
     package="ru.inpleasure.weather" >
     
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <usrs-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
