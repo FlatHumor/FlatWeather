@@ -18,13 +18,15 @@ public class WeatherPresenter
     private Looper looper;
     private HandlerThread thread;
     private Contract.Model model;
+    private Contract.View view;
     private Locator locator;
     
     
     public WeatherPresenter(Context context) {
         this.context = context;
         locator = new Locator(this);
-        thread = new HandlerThread(THREAD_ARG, Process.THREAD_PRIORITY_BACKGROUND);
+        thread = new HandlerThread(THREAD_ARG,
+            Process.THREAD_PRIORITY_BACKGROUND);
         
     }
     
