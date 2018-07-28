@@ -1,5 +1,10 @@
 package ru.inpleasure.weather.api;
 
+import java.io.IOException;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import ru.inpleasure.weather.Contract;
 import ru.inpleasure.weather.api.dto.WeatherDto;
 

@@ -26,8 +26,8 @@ public class MainActivity extends Activity
         window.requestFeature(Window.FEATURE_NO_TITLE);
         window.setStatusBarColor(Color.rgb(64,61,56));
         setContentView(R.layout.main);
-        textView = findViewById(R.id.activity_main_tv);
-        button = findViewById(R.id.test_button);
+        textView = (TextView)findViewById(R.id.activity_main_tv);
+        button = (Button)findViewById(R.id.test_button);
         presenter = new WeatherPresenter(this);
         button.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View view) {
