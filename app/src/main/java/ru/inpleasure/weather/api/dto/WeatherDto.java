@@ -30,10 +30,10 @@ public class WeatherDto
     private Clouds clouds;
     @SerializedName("dt")
     @Expose
-    private Integer dt;
+    private Long dt;
     @SerializedName("id")
     @Expose
-    private Integer id;
+    private Long id;
     @SerializedName("name")
     @Expose
     private String name;
@@ -97,19 +97,19 @@ public class WeatherDto
         this.clouds = clouds;
     }
 
-    public Integer getDt() {
+    public Long getDt() {
         return dt;
     }
 
-    public void setDt(Integer dt) {
+    public void setDt(Long dt) {
         this.dt = dt;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -175,24 +175,24 @@ public class WeatherDto
     {
         @SerializedName("lon")
         @Expose
-        private Integer lon;
+        private Double lon;
         @SerializedName("lat")
         @Expose
-        private Integer lat;
+        private Double lat;
 
-        public Integer getLon() {
+        public Double getLon() {
             return lon;
         }
 
-        public void setLon(Integer lon) {
+        public void setLon(Double lon) {
             this.lon = lon;
         }
 
-        public Integer getLat() {
+        public Double getLat() {
             return lat;
         }
 
-        public void setLat(Integer lat) {
+        public void setLat(Double lat) {
             this.lat = lat;
         }
 
@@ -208,13 +208,19 @@ public class WeatherDto
         private Integer humidity;
         @SerializedName("pressure")
         @Expose
-        private Integer pressure;
+        private Double pressure;
         @SerializedName("temp_min")
         @Expose
         private Double tempMin;
         @SerializedName("temp_max")
         @Expose
         private Double tempMax;
+        @SerializedName("sea_level")
+        @Expose
+        private Double seaLevel;
+        @SerializedName("grnd_level")
+        @Expose
+        private Double grndLevel;
 
         public Double getTemp() {
             return temp;
@@ -232,11 +238,11 @@ public class WeatherDto
             this.humidity = humidity;
         }
 
-        public Integer getPressure() {
+        public Double getPressure() {
             return pressure;
         }
 
-        public void setPressure(Integer pressure) {
+        public void setPressure(Double pressure) {
             this.pressure = pressure;
         }
 
@@ -256,19 +262,34 @@ public class WeatherDto
             this.tempMax = tempMax;
         }
 
+        public Double getSeaLevel() {
+            return seaLevel;
+        }
+
+        public void setSeaLevel(Double seaLevel) {
+            this.seaLevel = seaLevel;
+        }
+
+        public Double getGrndLevel() {
+            return grndLevel;
+        }
+
+        public void setGrndLevel(Double grndLevel) {
+            this.grndLevel = grndLevel;
+        }
     }
 
     public class Rain 
     {
         @SerializedName("3h")
         @Expose
-        private Integer _3h;
+        private Double _3h;
 
-        public Integer get3h() {
+        public Double get3h() {
             return _3h;
         }
 
-        public void set3h(Integer _3h) {
+        public void set3h(Double _3h) {
             this._3h = _3h;
         }
 
@@ -281,10 +302,13 @@ public class WeatherDto
         private String country;
         @SerializedName("sunrise")
         @Expose
-        private Integer sunrise;
+        private Long sunrise;
         @SerializedName("sunset")
         @Expose
-        private Integer sunset;
+        private Long sunset;
+        @SerializedName("message")
+        @Expose
+        private Double message;
 
         public String getCountry() {
             return country;
@@ -294,20 +318,28 @@ public class WeatherDto
             this.country = country;
         }
 
-        public Integer getSunrise() {
+        public Long getSunrise() {
             return sunrise;
         }
 
-        public void setSunrise(Integer sunrise) {
+        public void setSunrise(Long sunrise) {
             this.sunrise = sunrise;
         }
 
-        public Integer getSunset() {
+        public Long getSunset() {
             return sunset;
         }
 
-        public void setSunset(Integer sunset) {
+        public void setSunset(Long sunset) {
             this.sunset = sunset;
+        }
+
+        public Double getMessage() {
+            return message;
+        }
+
+        public void setMessage(Double message) {
+            this.message = message;
         }
 
     }

@@ -5,73 +5,79 @@ import ru.inpleasure.weather.model.DbField;
 public class Weather
 {
     @DbField("id integer primary key autoincrement")
-    Integer id;
+    private Integer id;
     
     @DbField("longitude real")
-    Double longitute;
+    private Double longitude;
     
     @DbField("latitude real")
-    Double latitude;
+    private Double latitude;
     
     @DbField("country text")
-    String country;
+    private String country;
     
     @DbField("sunrise integer")
-    Long sunrise;
+    private Long sunrise;
     
     @DbField("sunset integer")
-    Long sunset;
+    private Long sunset;
     
     @DbField("weatherId integer")
-    Integer weatherId;
+    private Integer weatherId;
     
     @DbField("weatherMain text")
-    String weatherMain;
+    private String weatherMain;
     
     @DbField("weatherDescription text")
-    String weatherDescription;
+    private String weatherDescription;
     
     @DbField("weatherIcon text")
-    String weatherIcon;
+    private String weatherIcon;
     
     @DbField("mainTemperature real")
-    Double mainTemperature;
+    private Double mainTemperature;
     
     @DbField("mainHumidity real")
-    Double mainHumidity;
+    private Integer mainHumidity;
     
     @DbField("mainPressure real")
-    Double mainPressure;
+    private Double mainPressure;
     
     @DbField("mainMinTemperature real")
-    Double mainMinTemperature;
+    private Double mainMinTemperature;
     
     @DbField("mainMaxTemperature real")
-    Double mainMaxTemperature;
+    private Double mainMaxTemperature;
+
+    @DbField("mainSeaLevel real")
+    private Double mainSeaLevel;
+
+    @DbField("mainGroundLevel real")
+    private Double mainGroundLevel;
     
     @DbField("windSpeed real")
-    Double windSpeed;
+    private Double windSpeed;
     
     @DbField("windDegrees real")
-    Double windDegrees;
+    private Double windDegrees;
     
     @DbField("rain3h real")
-    Double rain3h;
+    private Double rain3h;
     
     @DbField("cloudsAll real")
-    Double cloudsAll;
+    private Integer cloudsAll;
     
     @DbField("timestamp integer")
-    Long timestamp;
+    private Long timestamp;
     
     @DbField("systemId integer")
-    Long systemId;
+    private Long systemId;
     
     @DbField("cityName text")
-    String cityName;
+    private String cityName;
     
     @DbField("systemCode integer")
-    Integer systemCode;
+    private Integer systemCode;
  
     public Integer getId() {
        return this.id;
@@ -81,12 +87,12 @@ public class Weather
        this.id = value;
     }
  
-    public Double getLongitute() {
-       return this.longitute;
+    public Double getLongitude() {
+       return this.longitude;
     }
  
-    public void setLongitute(Double value) {
-       this.longitute = value;
+    public void setLongitude(Double value) {
+       this.longitude = value;
     }
  
     public Double getLatitude() {
@@ -161,11 +167,11 @@ public class Weather
        this.mainTemperature = value;
     }
  
-    public Double getMainHumidity() {
+    public Integer getMainHumidity() {
        return this.mainHumidity;
     }
  
-    public void setMainHumidity(Double value) {
+    public void setMainHumidity(Integer value) {
        this.mainHumidity = value;
     }
  
@@ -192,6 +198,22 @@ public class Weather
     public void setMainMaxTemperature(Double value) {
        this.mainMaxTemperature = value;
     }
+
+    public Double getMainSeaLevel() {
+        return mainSeaLevel;
+    }
+
+    public void setMainSeaLevel(Double mainSeaLevel) {
+        this.mainSeaLevel = mainSeaLevel;
+    }
+
+    public Double getMainGroundLevel() {
+        return mainGroundLevel;
+    }
+
+    public void setMainGroundLevel(Double mainGroundLevel) {
+        this.mainGroundLevel = mainGroundLevel;
+    }
  
     public Double getWindSpeed() {
        return this.windSpeed;
@@ -217,11 +239,11 @@ public class Weather
        this.rain3h = value;
     }
  
-    public Double getCloudsAll() {
+    public Integer getCloudsAll() {
        return this.cloudsAll;
     }
  
-    public void setCloudsAll(Double value) {
+    public void setCloudsAll(Integer value) {
        this.cloudsAll = value;
     }
  

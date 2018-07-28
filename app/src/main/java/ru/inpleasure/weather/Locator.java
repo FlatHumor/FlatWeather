@@ -25,6 +25,7 @@ public class Locator implements LocationListener
     @Override
     public void onLocationChanged(Location location) {
         presenter.onLocationReceived(location);
+        stop();
     }
     
     @Override

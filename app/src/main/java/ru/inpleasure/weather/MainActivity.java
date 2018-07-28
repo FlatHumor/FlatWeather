@@ -2,6 +2,7 @@ package ru.inpleasure.weather;
 
 import android.Manifest;
 import android.app.Activity;
+import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
 import android.content.Context;
@@ -17,8 +18,11 @@ import ru.inpleasure.weather.presenter.*;
 public class MainActivity extends Activity
     implements Contract.View
 {
+    public static final String PREFERENCE_FILE = "weather_prefs";
+    public static final String PREFERENCE_KEY_TOKEN = "KEY_TOKEN";
     public static final String[] PERMISSIONS = {
-            Manifest.permission.ACCESS_COARSE_LOCATION
+            Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.ACCESS_FINE_LOCATION
     };
 
     private TextView textView;
@@ -43,6 +47,19 @@ public class MainActivity extends Activity
                 presenter.onRefreshButtonClick();
             }
         });
+
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle state) {
+        super.onSaveInstanceState(state);
+        state.putString("one", textView.getText().toString());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle state) {
+        super.onRestoreInstanceState(state);
+        textView.setText(state.getString("one"));
     }
     
     @Override
