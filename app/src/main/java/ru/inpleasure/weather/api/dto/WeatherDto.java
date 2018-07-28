@@ -1,12 +1,40 @@
 package ru.inpleasure.weather.api.dto;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import ru.inpleasure.weather.R;
+
 public class WeatherDto
 {
+    public static final Map<String, Integer> WEATHER_ICONS;
+
+    static {
+        WEATHER_ICONS = new HashMap<>();
+        WEATHER_ICONS.put("01d", R.drawable.sunny);
+        WEATHER_ICONS.put("01n", R.drawable.sunny);
+        WEATHER_ICONS.put("02d", R.drawable.mostly_cloudy);
+        WEATHER_ICONS.put("02n", R.drawable.mostly_cloudy);
+        WEATHER_ICONS.put("03d", R.drawable.cloudy);
+        WEATHER_ICONS.put("03n", R.drawable.cloudy);
+        WEATHER_ICONS.put("04d", R.drawable.cloudy);
+        WEATHER_ICONS.put("04n", R.drawable.cloudy);
+        WEATHER_ICONS.put("09d", R.drawable.drizzle);
+        WEATHER_ICONS.put("09n", R.drawable.drizzle);
+        WEATHER_ICONS.put("10d", R.drawable.slight_drizzle);
+        WEATHER_ICONS.put("10n", R.drawable.slight_drizzle);
+        WEATHER_ICONS.put("11d", R.drawable.thunderstorms);
+        WEATHER_ICONS.put("11n", R.drawable.thunderstorms);
+        WEATHER_ICONS.put("13d", R.drawable.snow);
+        WEATHER_ICONS.put("13n", R.drawable.snow);
+        WEATHER_ICONS.put("50d", R.drawable.haze);
+        WEATHER_ICONS.put("50n", R.drawable.haze);
+    }
+
     @SerializedName("coord")
     @Expose
     private Coord coord;

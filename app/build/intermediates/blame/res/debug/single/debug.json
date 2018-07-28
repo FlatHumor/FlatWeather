@@ -4,12 +4,28 @@
         "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable-xhdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable_cloudy.png.flat",
+        "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable/cloudy.png"
+    },
+    {
         "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
         "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/layout/main.xml"
     },
     {
+        "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/layout_dialog_layout.xml.flat",
+        "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/layout/dialog_layout.xml"
+    },
+    {
+        "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable_mostly_cloudy.png.flat",
+        "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable/mostly_cloudy.png"
+    },
+    {
         "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
         "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable_slight_drizzle.png.flat",
+        "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable/slight_drizzle.png"
     },
     {
         "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable_nbg1.png.flat",
@@ -20,11 +36,31 @@
         "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable_snow.png.flat",
+        "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable/snow.png"
+    },
+    {
         "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable_tiled_bg.xml.flat",
         "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable/tiled_bg.xml"
     },
     {
+        "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable_drizzle.png.flat",
+        "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable/drizzle.png"
+    },
+    {
         "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher.png.flat",
         "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable_haze.png.flat",
+        "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable/haze.png"
+    },
+    {
+        "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable_thunderstorms.png.flat",
+        "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable/thunderstorms.png"
+    },
+    {
+        "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable_sunny.png.flat",
+        "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable/sunny.png"
     }
 ]

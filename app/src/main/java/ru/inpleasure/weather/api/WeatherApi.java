@@ -19,7 +19,8 @@ import ru.inpleasure.weather.api.dto.WeatherDto;
 public class WeatherApi
     implements Contract.Api
 {
-    public static final String BASE_API = "https://api.openweathermap.org/data/2.5/weather?lat=%s&lon=%s&appid=%s";
+    public static final String BASE_API =
+            "https://api.openweathermap.org/data/2.5/weather?units=metric&lat=%s&lon=%s&appid=%s";
 
     private Context context;
     private SharedPreferences preferences;
@@ -53,7 +54,6 @@ public class WeatherApi
         String token = preferences.getString(
                 MainActivity.PREFERENCE_KEY_TOKEN, null);
         String weatherUrl = String.format(BASE_API, latitude, longitude, token);
-        Log.d("__WEATHER_URL__", weatherUrl);
         String response = getResponse(weatherUrl);
         if (response == null)
             return null;

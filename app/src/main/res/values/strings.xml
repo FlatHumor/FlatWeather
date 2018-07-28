@@ -3,5 +3,9 @@
 
     <string name="app_name">Weather</string>
     <string name="hello_world">Hello world!</string>
+    <string name="dialog_token_title">Укажите Токен</string>
+    <string name="dialog_token_positive">OK</string>
+    <string name="dialog_token_negative">Закрыть</string>
+    <string name="dialog_token_warning">(Без токена приложение не работает)</string>
 
 </resources>

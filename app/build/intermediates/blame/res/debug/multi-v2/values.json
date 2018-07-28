@@ -6,37 +6,34 @@
                 {
                     "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "3",
-                        "endColumns": "9",
-                        "endOffsets": "129"
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
                     },
                     "to": {
-                        "startLines": "4",
+                        "startLines": "8",
                         "startColumns": "4",
-                        "startOffsets": "153",
-                        "endLines": "5",
+                        "startOffsets": "410",
+                        "endLines": "9",
                         "endColumns": "9",
-                        "endOffsets": "227"
+                        "endOffsets": "484"
                     }
                 },
                 {
                     "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "3,4",
-                        "startColumns": "4,4",
-                        "startOffsets": "56,101",
-                        "endColumns": "44,52",
-                        "endOffsets": "96,149"
+                        "startLines": "-1,7,-1,-1,8,-1",
+                        "startColumns": "-1,4,-1,-1,4,-1",
+                        "startOffsets": "-1,268,-1,-1,326,-1",
+                        "endColumns": "-1,57,-1,-1,84,-1",
+                        "endOffsets": "-1,321,-1,-1,406,-1"
                     },
                     "to": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,100",
-                        "endColumns": "44,52",
-                        "endOffsets": "95,148"
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,100,158,211,272,357",
+                        "endColumns": "44,57,52,60,84,52",
+                        "endOffsets": "95,153,206,267,352,405"
                     }
                 }
             ]

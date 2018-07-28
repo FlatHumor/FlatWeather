@@ -2,6 +2,8 @@ package ru.inpleasure.weather;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.Dialog;
+import android.content.SharedPreferences;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
@@ -28,6 +30,7 @@ public class MainActivity extends Activity
     private TextView textView;
     private Button button;
     private Contract.Presenter presenter;
+    private SharedPreferences preferences;
     
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -47,6 +50,10 @@ public class MainActivity extends Activity
                 presenter.onRefreshButtonClick();
             }
         });
+        preferences = getSharedPreferences(PREFERENCE_FILE, Context.MODE_PRIVATE);
+        if (preferences.getString(PREFERENCE_KEY_TOKEN, null) == null) {
+            new TokenDialog().show(getFragmentManager(), "TOKEN_DIALOG");
+        }
 
     }
 
