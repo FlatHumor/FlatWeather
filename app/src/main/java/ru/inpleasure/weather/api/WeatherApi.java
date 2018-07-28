@@ -20,7 +20,7 @@ public class WeatherApi
     implements Contract.Api
 {
     public static final String BASE_API = "https://api.openweathermap.org/data/2.5/weather?lat=%s&lon=%s&appid=%s";
-    public static final String TOKEN = "aadad65a84e4aa420d4e60577e58b3dc";
+
     private Context context;
     private SharedPreferences preferences;
 
@@ -52,7 +52,7 @@ public class WeatherApi
         double longitude = roundBySecondSign(location.getLongitude());
         String token = preferences.getString(
                 MainActivity.PREFERENCE_KEY_TOKEN, null);
-        String weatherUrl = String.format(BASE_API, latitude, longitude, TOKEN);
+        String weatherUrl = String.format(BASE_API, latitude, longitude, token);
         Log.d("__WEATHER_URL__", weatherUrl);
         String response = getResponse(weatherUrl);
         if (response == null)
