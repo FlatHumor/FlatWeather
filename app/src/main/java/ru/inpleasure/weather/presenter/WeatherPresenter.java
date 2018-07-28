@@ -1,6 +1,8 @@
 package ru.inpleasure.weather.presenter;
 
 import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
 import android.location.Location;
 import android.os.AsyncTask;
 import android.widget.TextView;
@@ -50,24 +52,24 @@ public class WeatherPresenter
     
     @Override
     public void onRefreshButtonClick() {
-        view.showText("getting location...");
         locator.start();
     }
     
     @Override
     public void onLocationReceived(Location location) {
-        if (location == null) {
-            view.showText("location is unavailable");
-            return;
-        }
         weatherLoader.execute(location);
     }
     
     @Override
-    public void onLocationError()
-    {
-        view.showText("Location Error");
+    public void onLocationError() {
         locator.stop();
+    }
+
+    @Override
+    public void draw() {
+        Canvas canvas = view.getCanvas();
+        canvas.drawColor(Color.GREEN);
+        view.draw();
     }
 
 
@@ -115,7 +117,7 @@ public class WeatherPresenter
         protected void onPostExecute(Weather weather)
         {
             if (weather == null || view == null) return;
-            view.showText(weather.getCityName());
+            view.showWeather(weather);
         }
     }
 }

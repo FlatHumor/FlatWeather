@@ -8,4 +8,11 @@
     <string name="dialog_token_negative">Закрыть</string>
     <string name="dialog_token_warning">(Без токена приложение не работает)</string>
 
+    <!-- TEST VALUES -->
+    <string name="t_main_city_name">Moscow</string>
+    <string name="t_weather_main">Rain</string>
+    <string name="t_weather_description">moderate rain</string>
+    <string name="t_weather_temp_small">10 C</string>
+    <string name="t_weather_temp_big">12 C</string>
+
 </resources>

@@ -1,5 +1,6 @@
 package ru.inpleasure.weather;
 
+import android.graphics.Canvas;
 import android.os.Looper;
 import android.location.Location;
 import android.content.Context;
@@ -31,6 +32,7 @@ public interface Contract
     {
         void onRefreshButtonClick();
         void onHistoryButtonClick();
+        void draw();
         void onLocationReceived(Location location);
         void onLocationError();
         Context getContext();
@@ -40,7 +42,13 @@ public interface Contract
     interface View
     {
         Context getContext();
-        void showWeatherIcon();
-        void showText(String text);
+        void showWeather(Weather weather);
+        void draw();
+        Canvas getCanvas();
+    }
+
+    interface Drawer
+    {
+        Canvas getCanvas();
     }
 }

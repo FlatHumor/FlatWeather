@@ -13,6 +13,12 @@ import android.widget.EditText;
 
 public class TokenDialog extends DialogFragment
 {
+    private Contract.Presenter presenter;
+
+    public void setPresenter(Contract.Presenter presenter) {
+        this.presenter = presenter;
+    }
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState)
     {
@@ -29,6 +35,7 @@ public class TokenDialog extends DialogFragment
                                 .getText().toString();
                         preferences.edit()
                                 .putString(MainActivity.PREFERENCE_KEY_TOKEN, token).apply();
+                        presenter.onRefreshButtonClick();
                     }
                 })
                 .setNegativeButton(R.string.dialog_token_negative, new DialogInterface.OnClickListener() {

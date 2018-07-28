@@ -22,9 +22,16 @@ public final class R {
     public static final int tiled_bg=0x7f01000a;
   }
   public static final class id {
-    public static final int activity_main_tv=0x7f020000;
-    public static final int dialog_token_et=0x7f020001;
-    public static final int test_button=0x7f020002;
+    public static final int dialog_token_et=0x7f020000;
+    public static final int main_city_name=0x7f020001;
+    public static final int main_draw_view=0x7f020002;
+    public static final int main_top_block=0x7f020003;
+    public static final int main_weather_description=0x7f020004;
+    public static final int main_weather_icon=0x7f020005;
+    public static final int main_weather_main=0x7f020006;
+    public static final int main_weather_temp=0x7f020007;
+    public static final int main_weather_temp_max=0x7f020008;
+    public static final int main_weather_temp_min=0x7f020009;
   }
   public static final class layout {
     public static final int dialog_layout=0x7f030000;
@@ -37,6 +44,11 @@ public final class R {
     public static final int dialog_token_title=0x7f040003;
     public static final int dialog_token_warning=0x7f040004;
     public static final int hello_world=0x7f040005;
+    public static final int t_main_city_name=0x7f040006;
+    public static final int t_weather_description=0x7f040007;
+    public static final int t_weather_main=0x7f040008;
+    public static final int t_weather_temp_big=0x7f040009;
+    public static final int t_weather_temp_small=0x7f04000a;
   }
   public static final class style {
     public static final int AppTheme=0x7f050000;
