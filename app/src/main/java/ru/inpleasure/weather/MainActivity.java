@@ -76,8 +76,8 @@ public class MainActivity extends Activity
             dialog.setPresenter(presenter);
             dialog.show(getFragmentManager(), "TOKEN_DIALOG");
         }
-        //else
-            //presenter.onRefreshButtonClick();
+        else
+            presenter.onRefreshButtonClick();
     }
 
     @Override

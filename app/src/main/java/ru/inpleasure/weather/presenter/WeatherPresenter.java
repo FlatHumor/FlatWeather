@@ -30,7 +30,6 @@ public class WeatherPresenter
         context = view.getContext();
         locator = new Locator(this);
         api = new WeatherApi(context);
-        weatherLoader = new WeatherLoader(view);
     }
     
     @Override
@@ -41,8 +40,10 @@ public class WeatherPresenter
     @Override
     public void onDestroy() {
         locator.stop();
-        if (weatherLoader.getStatus() == AsyncTask.Status.RUNNING)
+        if (weatherLoader != null &&
+            weatherLoader.getStatus() == AsyncTask.Status.RUNNING)
             weatherLoader.cancel(false);
+        weatherLoader = null;
     }
     
     @Override
@@ -57,6 +58,7 @@ public class WeatherPresenter
     
     @Override
     public void onLocationReceived(Location location) {
+        weatherLoader = new WeatherLoader(view);
         weatherLoader.execute(location);
     }
     
