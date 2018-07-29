@@ -1,4 +1,4 @@
-#Sun Jul 29 01:33:57 MSK 2018
-base.0=/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/transforms/dexMerger/debug/35
+#Sun Jul 29 22:56:06 MSK 2018
+base.0=/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

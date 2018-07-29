@@ -22,9 +22,12 @@
                 {
                     "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "-1",
-                        "startColumns": "-1",
-                        "startOffsets": "-1"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "3",
+                        "endColumns": "9",
+                        "endOffsets": "129"
                     },
                     "to": {
                         "startLines": "13",
@@ -38,11 +41,11 @@
                 {
                     "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,-1,-1,-1,11,-1,-1,-1,-1",
-                        "startColumns": "-1,-1,-1,-1,-1,-1,4,-1,-1,-1,-1",
-                        "startOffsets": "-1,-1,-1,-1,-1,-1,437,-1,-1,-1,-1",
-                        "endColumns": "-1,-1,-1,-1,-1,-1,51,-1,-1,-1,-1",
-                        "endOffsets": "-1,-1,-1,-1,-1,-1,484,-1,-1,-1,-1"
+                        "startLines": "3,7,6,5,8,4,11,13,12,15,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "56,268,215,154,326,101,437,537,489,655,601",
+                        "endColumns": "44,57,52,60,84,52,51,63,47,51,53",
+                        "endOffsets": "96,321,263,210,406,149,484,596,532,702,650"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12",

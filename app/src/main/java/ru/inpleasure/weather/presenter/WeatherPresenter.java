@@ -11,6 +11,7 @@ import ru.inpleasure.weather.Contract;
 import ru.inpleasure.weather.Locator;
 import ru.inpleasure.weather.api.WeatherApi;
 import ru.inpleasure.weather.api.dto.WeatherDto;
+import ru.inpleasure.weather.model.WeatherModel;
 import ru.inpleasure.weather.model.dbo.Weather;
 
 
@@ -28,6 +29,7 @@ public class WeatherPresenter
     public WeatherPresenter(Contract.View view) {
         this.view = view;
         context = view.getContext();
+        model = new WeatherModel(context);
         locator = new Locator(this);
         api = new WeatherApi(context);
     }
@@ -53,13 +55,23 @@ public class WeatherPresenter
     
     @Override
     public void onRefreshButtonClick() {
-        locator.start();
+        if (weatherLoader == null) {
+            weatherLoader = new WeatherLoader(view);
+            weatherLoader.execute(locator.getLocation());
+        }
+        else if (weatherLoader.getStatus() != AsyncTask.Status.RUNNING)
+            weatherLoader.execute(locator.getLocation());
     }
     
     @Override
     public void onLocationReceived(Location location) {
         weatherLoader = new WeatherLoader(view);
         weatherLoader.execute(location);
+    }
+
+    @Override
+    public void initialize() {
+        locator.start();
     }
     
     @Override
@@ -119,6 +131,7 @@ public class WeatherPresenter
         protected void onPostExecute(Weather weather)
         {
             if (weather == null || view == null) return;
+            model.addWeather(weather);
             view.showWeather(weather);
         }
     }
