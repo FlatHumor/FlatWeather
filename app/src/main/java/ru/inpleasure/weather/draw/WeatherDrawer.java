@@ -9,8 +9,11 @@ import ru.inpleasure.weather.Contract;
 public class WeatherDrawer implements Contract.Drawer
 {
     private Canvas canvas;
+    private Contract.View view;
 
-    public WeatherDrawer() { }
+    public WeatherDrawer(Contract.View view) {
+        this.view = view;
+    }
 
     public void drawSomething()
     {
