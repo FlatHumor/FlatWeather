@@ -17,11 +17,7 @@ import android.widget.TextView;
 import android.widget.Button;
 import android.graphics.Color;
 
-import java.lang.reflect.Field;
-
 import ru.inpleasure.weather.api.dto.WeatherDto;
-import ru.inpleasure.weather.draw.WeatherDrawer;
-import ru.inpleasure.weather.model.DbField;
 import ru.inpleasure.weather.model.dbo.Weather;
 import ru.inpleasure.weather.presenter.WeatherPresenter;
 
@@ -84,6 +80,7 @@ public class MainActivity extends Activity
         }
         else
             presenter.initialize();
+        presenter.draw();
     }
 
     @Override
@@ -105,8 +102,11 @@ public class MainActivity extends Activity
 
     @Override
     public Canvas getCanvas() {
+        int width = getResources().getDisplayMetrics().widthPixels;
+        int height = (int)(getResources().getDisplayMetrics().heightPixels * 0.2);
+        drawView.setMinimumWidth(width);
         Bitmap bitmap = Bitmap.createBitmap(
-                100, 100, Bitmap.Config.ARGB_8888);
+                width, height, Bitmap.Config.ARGB_8888);
         drawView.setImageBitmap(bitmap);
         return new Canvas(bitmap);
     }

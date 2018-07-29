@@ -9,190 +9,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86cdcbbf-89d5-4d74-ad8c-d48aff2fcd50" name="Default" comment="Gradle added">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/model/WeatherModel.java" />
+    <list default="true" id="86cdcbbf-89d5-4d74-ad8c-d48aff2fcd50" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classes.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRT.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTLogCatReader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTLongMap.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTLongSet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTMetadata.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTReceiver.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTReflector.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTSender.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTThread.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTThreadLocal.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/Contract$Api.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/Contract$Drawer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/Contract$LocationService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/Contract$Model.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/Contract$Presenter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/Contract$View.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/Contract.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/Locator$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/Locator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/MainActivity$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/MainActivity.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R$attr$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R$drawable$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R$id$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R$layout$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R$string$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R$style$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/TokenDialog$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/TokenDialog$100000000$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/TokenDialog$100000000.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/TokenDialog$100000001$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/TokenDialog$100000001.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/TokenDialog.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/WeatherApi$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/WeatherApi.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Clouds$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Clouds.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Coord$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Coord.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Main$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Rain$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Rain.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Sys$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Sys.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Weather$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Weather.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Wind$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto$Wind.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/api/dto/WeatherDto.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/draw/WeatherDrawer$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/draw/WeatherDrawer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/model/DbField.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/model/WeatherDbHelper$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/model/WeatherDbHelper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/model/dbo/Weather$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/model/dbo/Weather.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/presenter/WeatherPresenter$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/presenter/WeatherPresenter$WeatherLoader$0$debug.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/presenter/WeatherPresenter$WeatherLoader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesdebug/ru/inpleasure/weather/presenter/WeatherPresenter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/adrt/ADRTLogCatReader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/adrt/ADRTLogCatReader.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/adrt/ADRTSender.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/adrt/ADRTSender.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract$Api.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract$Api.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract$Drawer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract$Drawer.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract$LocationService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract$LocationService.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract$Model.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract$Model.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract$Presenter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract$Presenter.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract$View.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract$View.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Contract.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Locator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/Locator.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/MainActivity.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/MainActivity.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R$attr.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R$drawable.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R$id.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R$layout.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R$string.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R$style.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/R.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/TokenDialog$100000000.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/TokenDialog$100000000.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/TokenDialog$100000001.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/TokenDialog$100000001.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/TokenDialog.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/TokenDialog.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/WeatherApi.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/WeatherApi.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Clouds.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Clouds.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Coord.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Coord.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Main.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Rain.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Rain.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Sys.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Sys.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Weather.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Weather.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Wind.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto$Wind.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/api/dto/WeatherDto.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/draw/WeatherDrawer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/draw/WeatherDrawer.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/model/DbField.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/model/DbField.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/model/WeatherDbHelper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/model/WeatherDbHelper.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/model/dbo/Weather.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/model/dbo/Weather.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/presenter/WeatherPresenter$WeatherLoader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/presenter/WeatherPresenter$WeatherLoader.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/presenter/WeatherPresenter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/classesrelease/ru/inpleasure/weather/presenter/WeatherPresenter.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/injected/AndroidManifest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/jardex/animal-sniffer-annotations-1.17.jar.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/jardex/gson-2.8.5.jar.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/jardex/okhttp-3.10.0.jar.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/jardex/okio-1.14.1.jar.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/res/drawable-hdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/res/drawable-mdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/res/drawable-xhdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/res/drawable-xxhdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/res/drawable/cloudy.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/res/drawable/drizzle.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/res/drawable/haze.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/res/drawable/mostly_cloudy.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/res/drawable/nbg1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/res/drawable/slight_drizzle.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/res/drawable/snow.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/res/drawable/sunny.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/res/drawable/thunderstorms.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/bin/resources.ap_" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/gen/ru/inpleasure/weather/BuildConfig.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/gen/ru/inpleasure/weather/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/build-info/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/build-info/debug/build-info.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ru/inpleasure/weather/Contract$Model.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ru/inpleasure/weather/Contract$Model.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ru/inpleasure/weather/Contract$Presenter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ru/inpleasure/weather/Contract$Presenter.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ru/inpleasure/weather/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ru/inpleasure/weather/MainActivity.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ru/inpleasure/weather/model/WeatherDbHelper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ru/inpleasure/weather/model/WeatherDbHelper.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ru/inpleasure/weather/presenter/WeatherPresenter$WeatherLoader.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ru/inpleasure/weather/presenter/WeatherPresenter$WeatherLoader.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ru/inpleasure/weather/presenter/WeatherPresenter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ru/inpleasure/weather/presenter/WeatherPresenter.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ru/inpleasure/weather/Contract$Model.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ru/inpleasure/weather/Contract$Model.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ru/inpleasure/weather/Contract$Presenter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ru/inpleasure/weather/Contract$Presenter.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ru/inpleasure/weather/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ru/inpleasure/weather/MainActivity.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ru/inpleasure/weather/model/WeatherDbHelper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ru/inpleasure/weather/model/WeatherDbHelper.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ru/inpleasure/weather/presenter/WeatherPresenter$WeatherLoader.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ru/inpleasure/weather/presenter/WeatherPresenter$WeatherLoader.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ru/inpleasure/weather/presenter/WeatherPresenter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ru/inpleasure/weather/presenter/WeatherPresenter.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_dep/debug/package_dependencies/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_dep/debug/package_dependencies/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_0/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_0/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_1/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_1/dex-renamer-state.txt" />
@@ -205,56 +24,24 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_8/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_8/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_9/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_9/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/+URUL449Ww6wIB8EtcQf9_bpXnc=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/+URUL449Ww6wIB8EtcQf9_bpXnc=" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/tmp/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/tmp/debug/dex-renamer-state.txt" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/tmp/debug/zip-cache/ABjXq+D1gK8+73H8+vnRSng_m7w=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/tmp/debug/zip-cache/ABjXq+D1gK8+73H8+vnRSng_m7w=" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/processInstantRunDebugResourcesApk/package_resources-debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/processInstantRunDebugResourcesApk/package_resources-debug/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-apk/debug/app-debug.apk" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_main.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_main.xml.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/dep/dependencies.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/dep/dependencies.apk" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_1.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_1.apk" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_2.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_2.apk" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_3.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_3.apk" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_4.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_4.apk" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_7.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_7.apk" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_5.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_5.apk" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_6.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_6.apk" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_8.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_8.apk" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_9.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_9.apk" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/10.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/11.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/12.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/ru/inpleasure/weather/Contract$Model.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/ru/inpleasure/weather/Contract$Model.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/ru/inpleasure/weather/Contract$Presenter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/ru/inpleasure/weather/Contract$Presenter.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/ru/inpleasure/weather/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/ru/inpleasure/weather/MainActivity.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/ru/inpleasure/weather/model/WeatherDbHelper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/ru/inpleasure/weather/model/WeatherDbHelper.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/ru/inpleasure/weather/presenter/WeatherPresenter$WeatherLoader.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/ru/inpleasure/weather/presenter/WeatherPresenter$WeatherLoader.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/ru/inpleasure/weather/presenter/WeatherPresenter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/ru/inpleasure/weather/presenter/WeatherPresenter.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/__content__.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/2/buildId.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/2/buildId.txt" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/2/ru/inpleasure/weather/model/WeatherDbHelper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/2/ru/inpleasure/weather/model/WeatherDbHelper.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/3/buildId.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/3/buildId.txt" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/3/ru/inpleasure/weather/presenter/WeatherPresenter$WeatherLoader.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/3/ru/inpleasure/weather/presenter/WeatherPresenter$WeatherLoader.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/3/ru/inpleasure/weather/presenter/WeatherPresenter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/3/ru/inpleasure/weather/presenter/WeatherPresenter.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/8/buildId.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/8/buildId.txt" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/8/ru/inpleasure/weather/Contract$Model.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/8/ru/inpleasure/weather/Contract$Model.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/8/ru/inpleasure/weather/Contract$Presenter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/8/ru/inpleasure/weather/Contract$Presenter.class" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/8/ru/inpleasure/weather/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/8/ru/inpleasure/weather/MainActivity.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/9/buildId.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/output.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/Contract.java" afterPath="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/Contract.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/model/WeatherDbHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/model/WeatherDbHelper.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/presenter/WeatherPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/presenter/WeatherPresenter.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -291,20 +78,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="85" column="35" lean-forward="false" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
+            <state relative-caret-position="199">
+              <caret line="105" column="82" lean-forward="true" selection-start-line="105" selection-start-column="82" selection-end-line="105" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2247#2404#0" expanded="true" />
-                <element signature="e#2403#2404#0" expanded="true" />
-                <element signature="e#3750#3751#0" expanded="true" />
-                <element signature="e#3777#3778#0" expanded="true" />
-                <element signature="e#4619#4620#0" expanded="true" />
-                <element signature="e#4656#4657#0" expanded="true" />
+                <element signature="e#2121#2278#0" expanded="true" />
+                <element signature="e#2277#2278#0" expanded="true" />
+                <element signature="e#3650#3651#0" expanded="true" />
+                <element signature="e#3677#3678#0" expanded="true" />
+                <element signature="e#4716#4717#0" expanded="true" />
+                <element signature="e#4753#4754#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="80" column="19" lean-forward="false" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -319,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeatherPresenter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WeatherPresenter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/presenter/WeatherPresenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="93" column="8" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+            <state relative-caret-position="309">
+              <caret line="85" column="20" lean-forward="false" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
               <folding>
                 <element signature="e#1993#1994#0" expanded="true" />
                 <element signature="e#2024#2025#0" expanded="true" />
@@ -336,23 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeatherDbHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/model/WeatherDbHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WeatherModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/model/WeatherModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="321">
-              <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+              <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#453#454#0" expanded="true" />
@@ -2449,19 +2237,19 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/draw/WetherDrawer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/draw/WeatherDrawer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/Contract.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/model/DbField.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/model/dbo/Weather.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/presenter/WeatherPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/model/WeatherDbHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/model/WeatherModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/MainActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="21" />
+    <option name="x" value="20" />
     <option name="y" value="38" />
     <option name="width" value="1865" />
     <option name="height" value="970" />
@@ -2522,6 +2310,17 @@
             </path>
             <path>
               <item name="dustyweather" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="dustyweather" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="dustyweather" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
@@ -2533,7 +2332,7 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Installed/android" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
-    <property name="device.picker.selection" value="29e7e1e09805" />
+    <property name="device.picker.selection" value="Tester" />
     <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_5_plus-29e7e1e09805/data/data/ru.inpleasure.weather/databases" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
@@ -2743,11 +2542,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532850731799</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Gradle added">
+      <created>1532894504557</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1532894504557</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="21" y="38" width="1865" height="970" extended-state="0" />
+    <frame x="20" y="38" width="1865" height="970" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2758,10 +2564,11 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896304" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32777116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32777116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2779,7 +2586,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2834,7 +2640,7 @@
         <state relative-caret-position="375">
           <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2873,12 +2679,12 @@
           <caret line="91" column="52" lean-forward="false" selection-start-line="91" selection-start-column="52" selection-end-line="91" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2247#2404#0" expanded="true" />
-            <element signature="e#2403#2404#0" expanded="true" />
-            <element signature="e#3750#3751#0" expanded="true" />
-            <element signature="e#3777#3778#0" expanded="true" />
-            <element signature="e#4619#4620#0" expanded="true" />
-            <element signature="e#4656#4657#0" expanded="true" />
+            <element signature="e#2121#2278#0" expanded="true" />
+            <element signature="e#2277#2278#0" expanded="true" />
+            <element signature="e#3650#3651#0" expanded="true" />
+            <element signature="e#3677#3678#0" expanded="true" />
+            <element signature="e#4716#4717#0" expanded="true" />
+            <element signature="e#4753#4754#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2897,12 +2703,12 @@
           <caret line="121" column="80" lean-forward="false" selection-start-line="121" selection-start-column="80" selection-end-line="121" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2247#2404#0" expanded="true" />
-            <element signature="e#2403#2404#0" expanded="true" />
-            <element signature="e#3750#3751#0" expanded="true" />
-            <element signature="e#3777#3778#0" expanded="true" />
-            <element signature="e#4619#4620#0" expanded="true" />
-            <element signature="e#4656#4657#0" expanded="true" />
+            <element signature="e#2121#2278#0" expanded="true" />
+            <element signature="e#2277#2278#0" expanded="true" />
+            <element signature="e#3650#3651#0" expanded="true" />
+            <element signature="e#3677#3678#0" expanded="true" />
+            <element signature="e#4716#4717#0" expanded="true" />
+            <element signature="e#4753#4754#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2935,7 +2741,7 @@
         <state relative-caret-position="330">
           <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2986,12 +2792,12 @@
           <caret line="53" column="72" lean-forward="false" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2247#2404#0" expanded="true" />
-            <element signature="e#2403#2404#0" expanded="true" />
-            <element signature="e#3750#3751#0" expanded="true" />
-            <element signature="e#3777#3778#0" expanded="true" />
-            <element signature="e#4619#4620#0" expanded="true" />
-            <element signature="e#4656#4657#0" expanded="true" />
+            <element signature="e#2121#2278#0" expanded="true" />
+            <element signature="e#2277#2278#0" expanded="true" />
+            <element signature="e#3650#3651#0" expanded="true" />
+            <element signature="e#3677#3678#0" expanded="true" />
+            <element signature="e#4716#4717#0" expanded="true" />
+            <element signature="e#4753#4754#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3122,13 +2928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/Locator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -3159,6 +2958,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3168,24 +2968,6 @@
           <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding>
-            <element signature="e#477#503#0" expanded="false" />
-            <element signature="e#1465#1489#0" expanded="false" />
-            <element signature="e#1817#1848#0" expanded="false" />
-            <element signature="e#2477#2507#0" expanded="false" />
-            <element signature="e#2935#2963#0" expanded="false" />
-            <element signature="e#3292#3322#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3260,28 +3042,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="85" column="35" lean-forward="false" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2247#2404#0" expanded="true" />
-            <element signature="e#2403#2404#0" expanded="true" />
-            <element signature="e#3750#3751#0" expanded="true" />
-            <element signature="e#3777#3778#0" expanded="true" />
-            <element signature="e#4619#4620#0" expanded="true" />
-            <element signature="e#4656#4657#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/model/WeatherDbHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3289,7 +3055,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/model/WeatherModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
-          <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+          <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#453#454#0" expanded="true" />
@@ -3298,10 +3064,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/Locator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/presenter/WeatherPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="93" column="8" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+        <state relative-caret-position="309">
+          <caret line="85" column="20" lean-forward="false" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
           <folding>
             <element signature="e#1993#1994#0" expanded="true" />
             <element signature="e#2024#2025#0" expanded="true" />
@@ -3309,6 +3083,33 @@
             <element signature="e#2109#2110#0" expanded="true" />
             <element signature="e#2427#2428#0" expanded="true" />
             <element signature="e#2467#2468#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="80" column="19" lean-forward="false" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/inpleasure/weather/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="105" column="82" lean-forward="true" selection-start-line="105" selection-start-column="82" selection-end-line="105" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2121#2278#0" expanded="true" />
+            <element signature="e#2277#2278#0" expanded="true" />
+            <element signature="e#3650#3651#0" expanded="true" />
+            <element signature="e#3677#3678#0" expanded="true" />
+            <element signature="e#4716#4717#0" expanded="true" />
+            <element signature="e#4753#4754#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -79,12 +79,16 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    <ImageView
-        android:id="@+id/main_draw_view"
-        android:layout_below="@id/main_top_block"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
-
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@id/main_top_block">
+        <ImageView
+            android:id="@+id/main_draw_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </ScrollView>
 
 
 </RelativeLayout>

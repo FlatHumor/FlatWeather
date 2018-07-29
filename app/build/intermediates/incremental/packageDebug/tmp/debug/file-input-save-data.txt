@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Jul 29 22:56:07 MSK 2018
+#Sun Jul 29 23:11:58 MSK 2018
 2.base=/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/transforms/dexMerger/debug/13
 0.path=classes.dex
 2.baseType=DIRECTORY
