@@ -13,6 +13,9 @@ import ru.inpleasure.weather.api.WeatherApi;
 import ru.inpleasure.weather.api.dto.WeatherDto;
 import ru.inpleasure.weather.model.WeatherModel;
 import ru.inpleasure.weather.model.dbo.Weather;
+import ru.inpleasure.weather.draw.WeatherDrawer;
+
+import java.util.List;
 
 
 public class WeatherPresenter
@@ -22,6 +25,7 @@ public class WeatherPresenter
     private Contract.Model model;
     private Contract.View view;
     private Contract.Api api;
+    private Contract.Drawer drawer;
     private Locator locator;
     private WeatherLoader weatherLoader;
     
@@ -32,6 +36,7 @@ public class WeatherPresenter
         model = new WeatherModel(context);
         locator = new Locator(this);
         api = new WeatherApi(context);
+        
     }
     
     @Override
@@ -81,9 +86,14 @@ public class WeatherPresenter
 
     @Override
     public void draw() {
-        Canvas canvas = view.getCanvas();
-        canvas.drawColor(Color.GREEN);
-        view.draw();
+        drawer = new WeatherDrawer(view);
+        List<Weather> weatherList = model.getWeather();
+        if (weatherList == null)
+            return;
+        double[] temperatures = new double[weatherList.size()];
+        for (int i = 0; i < temperatures.length;i++)
+            temperatures[i] = weatherList.get(i).getMainTemperature();
+        drawer.drawDots(temperatures);
     }
 
 

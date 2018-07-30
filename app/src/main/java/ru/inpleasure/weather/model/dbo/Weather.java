@@ -1,6 +1,8 @@
 package ru.inpleasure.weather.model.dbo;
 
 import ru.inpleasure.weather.model.DbField;
+import java.text.SimpleDateFormat;
+import java.util.*;
  
 public class Weather
 {
@@ -277,5 +279,12 @@ public class Weather
  
     public void setSystemCode(Integer value) {
        this.systemCode = value;
+    }
+    
+    public String getSunriseString() {
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(sunrise);
+        return sdf.format(calendar.getTime());
     }
 }

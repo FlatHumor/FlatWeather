@@ -52,6 +52,6 @@ public interface Contract
 
     interface Drawer
     {
-        Canvas getCanvas();
+        void drawDots(double[] values);
     }
 }

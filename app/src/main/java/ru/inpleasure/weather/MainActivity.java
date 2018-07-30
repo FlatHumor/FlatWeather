@@ -38,6 +38,7 @@ public class MainActivity extends Activity
     private TextView weatherTempMin;
     private TextView weatherTemp;
     private TextView weatherTempMax;
+    private TextView sunrise;
     private ImageView drawView;
     private Typeface poiretOneTypeface;
     private Button button;
@@ -71,6 +72,7 @@ public class MainActivity extends Activity
         weatherTempMin = (TextView)findViewById(R.id.main_weather_temp_min);
         weatherTemp = (TextView)findViewById(R.id.main_weather_temp);
         weatherTempMax = (TextView)findViewById(R.id.main_weather_temp_max);
+        sunrise = (TextView)findViewById(R.id.main_sunrise);
         drawView = (ImageView) findViewById(R.id.main_draw_view);
         preferences = getSharedPreferences(PREFERENCE_FILE, Context.MODE_PRIVATE);
         if (preferences.getString(PREFERENCE_KEY_TOKEN, null) == null) {
@@ -121,6 +123,7 @@ public class MainActivity extends Activity
         weatherTempMin.setText(String.valueOf(weather.getMainMinTemperature()));
         weatherTemp.setText(String.valueOf(weather.getMainTemperature()));
         weatherTempMax.setText(String.valueOf(weather.getMainMaxTemperature()));
+        sunrise.setText(weather.getSunriseString());
     }
 
     @Override

@@ -26,7 +26,7 @@ public class WeatherModel implements Contract.Model
         Cursor cursor;
         try {
             cursor = database.query(Weather.class.getSimpleName(),
-                    null, null, null, null, null, null);
+                    null, null, null, null, null,  "id desc");
         }
         catch (Exception e) {
             return null;
