@@ -287,4 +287,10 @@ public class Weather
         calendar.setTimeInMillis(sunrise);
         return sdf.format(calendar.getTime());
     }
+    
+    public String getRoundedTemperature()
+    {
+        long roundedTemperature = Math.round(mainTemperature);
+        return String.format("%s °", roundedTemperature);
+    }
 }

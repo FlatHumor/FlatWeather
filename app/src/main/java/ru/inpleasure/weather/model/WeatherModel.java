@@ -69,6 +69,12 @@ public class WeatherModel implements Contract.Model
         helper.close();
         return weatherList;
     }
+    
+    @Override
+    public Weather getLastWeather() {
+        List<Weather> w = getWeather();
+        return w == null ? null : w.get(0);
+    }
 
     @Override
     public void addWeather(Weather weather) {

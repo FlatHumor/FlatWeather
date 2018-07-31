@@ -13,7 +13,7 @@ public class WeatherDrawer implements Contract.Drawer
 {
     private static final int BAR_OFFSET = 70;
     private static final float DOT_OFFSET = 70;
-    private static final float DOT_LABEL_OFFSET = 50;
+    private static final float DOT_LABEL_OFFSET = 30;
     
     private Canvas canvas;
     private Contract.View view;
@@ -56,7 +56,7 @@ public class WeatherDrawer implements Contract.Drawer
     public void drawDots(double[] values)
     {
         dotPath.reset();
-        float xPosition = DOT_OFFSET;
+        float xPosition = 0f;
         dotPath.moveTo(xPosition, (float)(canvasHeight-values[0]*3));
         for (double value : values)
         {
@@ -69,6 +69,8 @@ public class WeatherDrawer implements Contract.Drawer
                 dotLabelPaint);
             dotPath.lineTo(xPosition, (float)(canvasHeight - value * 3));
             xPosition += DOT_OFFSET;
+            if (xPosition >= canvasWidth)
+                break;
         }
         canvas.drawPath(dotPath, pathPaint);
         view.draw();

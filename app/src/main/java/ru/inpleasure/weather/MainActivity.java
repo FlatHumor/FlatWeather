@@ -121,7 +121,7 @@ public class MainActivity extends Activity
         weatherMain.setText(weather.getWeatherMain());
         weatherDescription.setText(weather.getWeatherDescription());
         weatherTempMin.setText(String.valueOf(weather.getMainMinTemperature()));
-        weatherTemp.setText(String.valueOf(weather.getMainTemperature()));
+        weatherTemp.setText(weather.getRoundedTemperature());
         weatherTempMax.setText(String.valueOf(weather.getMainMaxTemperature()));
         sunrise.setText(weather.getSunriseString());
     }

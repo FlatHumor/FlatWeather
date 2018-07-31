@@ -27,6 +27,7 @@ public interface Contract
     interface Model
     {
         List<Weather> getWeather();
+        Weather getLastWeather();
         void addWeather(Weather weather);
     }
     
