@@ -112,6 +112,23 @@ public class MainActivity extends Activity
         drawView.setImageBitmap(bitmap);
         return new Canvas(bitmap);
     }
+    
+    @Override
+    public View getDrawableView() {
+        return drawView;
+    }
+    
+    @Override
+    public int getWidth() {
+        return getResources()
+            .getDisplayMetrics().widthPixels;
+    }
+    
+    @Override
+    public int getHeight() {
+        return getResources()
+            .getDisplayMetrics().heightPixels;
+    }
 
     @Override
     public void showWeather(Weather weather)

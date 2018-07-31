@@ -47,6 +47,9 @@ public interface Contract
     {
         Context getContext();
         void showWeather(Weather weather);
+        android.view.View getDrawableView();
+        int getWidth();
+        int getHeight();
         void draw();
         Canvas getCanvas();
     }

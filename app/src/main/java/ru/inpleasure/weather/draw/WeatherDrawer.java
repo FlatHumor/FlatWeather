@@ -6,6 +6,8 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Typeface;
+import android.view.View;
+import android.widget.ImageView;
 
 import ru.inpleasure.weather.Contract;
 
@@ -17,6 +19,7 @@ public class WeatherDrawer implements Contract.Drawer
     
     private Canvas canvas;
     private Contract.View view;
+    private View drawableView;
     private float canvasWidth;
     private float canvasHeight;
     private float centerX;
@@ -27,13 +30,10 @@ public class WeatherDrawer implements Contract.Drawer
     private Paint pathPaint;
     private Path dotPath;
 
-    public WeatherDrawer(Contract.View view) {
+    public WeatherDrawer(Contract.View view)
+    {
         this.view = view;
-        canvas = view.getCanvas();
-        canvasWidth = canvas.getWidth();
-        canvasHeight = canvas.getHeight();
-        centerX = canvasWidth / 2;
-        centerY = canvasHeight / 2;
+        drawableView = view.getDrawableView();
         barPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         barPaint.setColor(0xff2b7bba);
         barPaint.setStrokeWidth(20f);
@@ -56,21 +56,31 @@ public class WeatherDrawer implements Contract.Drawer
     public void drawDots(double[] values)
     {
         dotPath.reset();
-        float xPosition = 0f;
-        dotPath.moveTo(xPosition, (float)(canvasHeight-values[0]*3));
+        float xPosition = 20f;
+        int bitmapWidth = (int)(xPosition + DOT_OFFSET * values.length);
+        int bitmapHeight = (int)(view.getHeight() * 0.2);
+        centerY = bitmapHeight / 2f;
+        float scale = centerY / 50;
+        Bitmap bitmap = Bitmap.createBitmap(bitmapWidth, bitmapHeight,
+            Bitmap.Config.ARGB_8888);
+        drawableView.getLayoutParams().width = bitmapWidth;
+        drawableView.getLayoutParams().height = bitmapHeight;
+        ((ImageView)drawableView).setImageBitmap(bitmap);
+        Canvas canvas = new Canvas(bitmap);
+        dotPath.moveTo(xPosition, (float)(centerY - values[0] * scale));
+        canvas.drawLine(0f, centerY, bitmapWidth, centerY, pathPaint);
         for (double value : values)
         {
+            float scaledValue = (float)(centerY + value * scale);
             canvas.drawPoint(
                 xPosition,
-                (float)(canvasHeight - value * 3),
+                (float)(bitmapHeight - scaledValue),
                 dotPaint);
             canvas.drawText(String.valueOf(value), xPosition,
-                (float)(canvasHeight - value * 3 - DOT_LABEL_OFFSET),
+                (float)(bitmapHeight - scaledValue - DOT_LABEL_OFFSET),
                 dotLabelPaint);
-            dotPath.lineTo(xPosition, (float)(canvasHeight - value * 3));
+            dotPath.lineTo(xPosition, (float)(bitmapHeight - scaledValue));
             xPosition += DOT_OFFSET;
-            if (xPosition >= canvasWidth)
-                break;
         }
         canvas.drawPath(dotPath, pathPaint);
         view.draw();

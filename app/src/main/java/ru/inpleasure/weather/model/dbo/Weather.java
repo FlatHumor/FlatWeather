@@ -284,7 +284,7 @@ public class Weather
     public String getSunriseString() {
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
         Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(sunrise);
+        calendar.setTimeInMillis(sunrise * 1000);
         return sdf.format(calendar.getTime());
     }
     
