@@ -2,7 +2,10 @@ package ru.inpleasure.weather.model.dbo;
 
 import ru.inpleasure.weather.model.DbField;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.List;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.TimeZone;
  
 public class Weather
 {
@@ -283,14 +286,20 @@ public class Weather
     
     public String getSunriseString() {
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-        Calendar calendar = Calendar.getInstance();
+        Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
         calendar.setTimeInMillis(sunrise * 1000);
         return sdf.format(calendar.getTime());
     }
     
-    public String getRoundedTemperature()
-    {
+    public String getRoundedTemperature() {
         long roundedTemperature = Math.round(mainTemperature);
-        return String.format("%s °", roundedTemperature);
+        return String.format("%s°", roundedTemperature);
+    }
+    
+    public String getMeasureTime() {
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+        Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
+        calendar.setTimeInMillis(timestamp * 1000);
+        return sdf.format(calendar.getTime());
     }
 }

@@ -1,6 +1,7 @@
 package ru.inpleasure.weather;
 
 import android.graphics.Canvas;
+import android.graphics.Bitmap;
 import android.os.Looper;
 import android.location.Location;
 import android.content.Context;
@@ -56,6 +57,6 @@ public interface Contract
 
     interface Drawer
     {
-        void drawDots(double[] values);
+        Bitmap drawDots(List<Weather> weatherList);
     }
 }

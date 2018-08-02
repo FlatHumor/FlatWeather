@@ -3,9 +3,14 @@ package ru.inpleasure.weather.presenter;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Bitmap;
 import android.location.Location;
 import android.os.AsyncTask;
 import android.widget.TextView;
+import android.widget.ImageView;
+import android.view.View;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 
 import ru.inpleasure.weather.Contract;
 import ru.inpleasure.weather.Locator;
@@ -16,6 +21,7 @@ import ru.inpleasure.weather.model.dbo.Weather;
 import ru.inpleasure.weather.draw.WeatherDrawer;
 
 import java.util.List;
+import android.graphics.drawable.*;
 
 
 public class WeatherPresenter
@@ -37,6 +43,15 @@ public class WeatherPresenter
         locator = new Locator(this);
         api = new WeatherApi(context);
         
+    }
+    
+    private boolean isConnectedToInternet()
+    {
+        NetworkInfo nInfo = ((ConnectivityManager)context
+            .getSystemService(Context.CONNECTIVITY_SERVICE))
+            .getActiveNetworkInfo();
+        return nInfo == null ? false :
+            nInfo.isConnectedOrConnecting();
     }
     
     @Override
@@ -70,8 +85,10 @@ public class WeatherPresenter
     
     @Override
     public void onLocationReceived(Location location) {
-        weatherLoader = new WeatherLoader(view);
-        weatherLoader.execute(location);
+        if (isConnectedToInternet()) {
+            weatherLoader = new WeatherLoader(view);
+            weatherLoader.execute(location);
+        }
     }
 
     @Override
@@ -87,14 +104,10 @@ public class WeatherPresenter
 
     @Override
     public void draw() {
-        drawer = new WeatherDrawer(view);
         List<Weather> weatherList = model.getWeather();
         if (weatherList == null)
             return;
-        double[] temperatures = new double[weatherList.size()];
-        for (int i = 0; i < temperatures.length;i++)
-            temperatures[i] = weatherList.get(i).getMainTemperature();
-        drawer.drawDots(temperatures);
+        new BitmapDrawer(view).execute(weatherList);
     }
 
 
@@ -144,6 +157,34 @@ public class WeatherPresenter
             if (weather == null || view == null) return;
             model.addWeather(weather);
             view.showWeather(weather);
+        }
+    }
+    
+    class BitmapDrawer extends AsyncTask<List<Weather>, Void, Bitmap>
+    {
+        private Contract.View view;
+        private WeatherDrawer drawer;
+        
+        public BitmapDrawer(final Contract.View view) {
+            this.view = view;
+            drawer = new WeatherDrawer(view);
+        }
+        
+        @Override
+        protected Bitmap doInBackground(List<Weather>... w)
+        {
+            List<Weather> weatherList = w[0];
+            Bitmap bitmap = drawer.drawDots(weatherList);
+            return bitmap;
+        }
+        
+        @Override
+        protected void onPostExecute(Bitmap bitmap) {
+            View drawableView = view.getDrawableView();
+            drawableView.getLayoutParams().width = bitmap.getWidth();
+            drawableView.getLayoutParams().height = bitmap.getHeight();
+            ((ImageView)drawableView).setImageBitmap(bitmap);
+            view.draw();
         }
     }
 }
