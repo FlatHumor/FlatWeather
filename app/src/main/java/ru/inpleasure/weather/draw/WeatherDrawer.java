@@ -39,6 +39,7 @@ public class WeatherDrawer implements Contract.Drawer
     private Paint pathPaint;
     private Paint maxTempPaint;
     private Paint minTempPaint;
+    private Paint timePaint;
     private Path dotPath;
 
     public WeatherDrawer(Contract.View view)
@@ -75,6 +76,9 @@ public class WeatherDrawer implements Contract.Drawer
         maxTempPaint.setTextAlign(Paint.Align.CENTER);
         maxTempPaint.setTextSize(40f);
         maxTempPaint.setColor(0xffff7d00);
+        timePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        timePaint.set(maxTempPaint);
+        timePaint.setColor(0xff222222);
         dotPath = new Path();
     }
     
@@ -115,17 +119,16 @@ public class WeatherDrawer implements Contract.Drawer
         final int WIDTH = view.getWidth();
         final int HEIGHT = Math.round(view.getHeight() * 0.2f);
         final float CENTER_Y = HEIGHT / 2f;
-        final float PADDING = 10f;
+        final float PADDING = 20f;
         float blockWidth = WIDTH / BLOCK_COUNT;
         int iconSize = Math.round(blockWidth * 0.7f);
         float xPosition = PADDING;
         Bitmap bitmap = Bitmap.createBitmap(WIDTH, HEIGHT, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
-        canvas.drawColor(Color.WHITE);
         Rect timeTextRect = new Rect();
         Rect minTempRect = new Rect();
         minTempPaint.getTextBounds("00", 0, 2, minTempRect);
-        dotLabelPaint.getTextBounds("00:00", 0, 4, timeTextRect);
+        timePaint.getTextBounds("00:00", 0, 4, timeTextRect);
         float timeYPosition = PADDING + timeTextRect.height();
         float minTempYPosition = HEIGHT - PADDING;
         float maxTempYPosition = HEIGHT - PADDING - minTempRect.height() - PADDING;
@@ -135,7 +138,7 @@ public class WeatherDrawer implements Contract.Drawer
             Weather weather = weatherList.get(i);
 
             float blockCenter = xPosition + blockWidth * 0.5f;
-            canvas.drawText(weather.getMeasureTime(), blockCenter, timeYPosition, dotLabelPaint);
+            canvas.drawText(weather.getMeasureTime(), blockCenter, timeYPosition, timePaint);
 
             String iconName = weather.getWeatherIcon();
             Bitmap iconBitmap = getScaledIcon(iconName, iconSize);

@@ -58,5 +58,6 @@ public interface Contract
     interface Drawer
     {
         Bitmap drawDots(List<Weather> weatherList);
+        Bitmap drawWeatherTwo(List<Weather> weatherList);
     }
 }
