@@ -1,5 +1,6 @@
 package ru.inpleasure.weather.model.dbo;
 
+import ru.inpleasure.weather.api.dto.WeatherDto;
 import ru.inpleasure.weather.model.DbField;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -301,5 +302,39 @@ public class Weather
         Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
         calendar.setTimeInMillis(timestamp * 1000);
         return sdf.format(calendar.getTime());
+    }
+
+    public static String formatTemperature(Double temperature) {
+        long roundedTemperature = Math.round(temperature);
+        return String.format("%s°", roundedTemperature);
+    }
+
+    public static Weather createFromDto(WeatherDto weatherDto)
+    {
+        Weather weather = new Weather();
+        weather.setLongitude(weatherDto.getCoord().getLon());
+        weather.setLatitude(weatherDto.getCoord().getLat());
+        weather.setCountry(weatherDto.getSys().getCountry());
+        weather.setSunrise(weatherDto.getSys().getSunrise());
+        weather.setSunset(weatherDto.getSys().getSunset());
+        weather.setWeatherId(weatherDto.getWeather().get(0).getId());
+        weather.setWeatherMain(weatherDto.getWeather().get(0).getMain());
+        weather.setWeatherDescription(weatherDto.getWeather().get(0).getDescription());
+        weather.setWeatherIcon(weatherDto.getWeather().get(0).getIcon());
+        weather.setMainTemperature(weatherDto.getMain().getTemp());
+        weather.setMainHumidity(weatherDto.getMain().getHumidity());
+        weather.setMainPressure(weatherDto.getMain().getPressure());
+        weather.setMainMinTemperature(weatherDto.getMain().getTempMin());
+        weather.setMainMaxTemperature(weatherDto.getMain().getTempMax());
+        weather.setMainSeaLevel(weatherDto.getMain().getSeaLevel());
+        weather.setMainGroundLevel(weatherDto.getMain().getGrndLevel());
+        weather.setWindSpeed(weatherDto.getWind().getSpeed());
+        weather.setWindDegrees(weatherDto.getWind().getDeg());
+        weather.setCloudsAll(weatherDto.getClouds().getAll());
+        weather.setTimestamp(weatherDto.getDt());
+        weather.setSystemId(weatherDto.getId());
+        weather.setCityName(weatherDto.getName());
+        weather.setSystemCode(weatherDto.getCod());
+        return weather;
     }
 }

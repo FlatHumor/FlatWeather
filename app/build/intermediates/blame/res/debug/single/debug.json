@@ -24,6 +24,10 @@
         "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable-hdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable_weather_bg.xml.flat",
+        "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable/weather_bg.xml"
+    },
+    {
         "merged": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/build/intermediates/res/merged/debug/drawable_slight_drizzle.png.flat",
         "source": "/home/mark/apps/AndroidStudioProjects/dustyweather/app/src/main/res/drawable/slight_drizzle.png"
     },

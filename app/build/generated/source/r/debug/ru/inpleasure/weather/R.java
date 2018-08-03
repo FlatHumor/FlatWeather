@@ -20,18 +20,21 @@ public final class R {
     public static final int sunny=0x7f010008;
     public static final int thunderstorms=0x7f010009;
     public static final int tiled_bg=0x7f01000a;
+    public static final int weather_bg=0x7f01000b;
   }
   public static final class id {
     public static final int dialog_token_et=0x7f020000;
     public static final int main_city_name=0x7f020001;
-    public static final int main_draw_view=0x7f020002;
-    public static final int main_top_block=0x7f020003;
-    public static final int main_weather_description=0x7f020004;
-    public static final int main_weather_icon=0x7f020005;
-    public static final int main_weather_main=0x7f020006;
-    public static final int main_weather_temp=0x7f020007;
-    public static final int main_weather_temp_max=0x7f020008;
-    public static final int main_weather_temp_min=0x7f020009;
+    public static final int main_details_block=0x7f020002;
+    public static final int main_draw_view=0x7f020003;
+    public static final int main_sunrise=0x7f020004;
+    public static final int main_top_block=0x7f020005;
+    public static final int main_weather_description=0x7f020006;
+    public static final int main_weather_icon=0x7f020007;
+    public static final int main_weather_main=0x7f020008;
+    public static final int main_weather_temp=0x7f020009;
+    public static final int main_weather_temp_max=0x7f02000a;
+    public static final int main_weather_temp_min=0x7f02000b;
   }
   public static final class layout {
     public static final int dialog_layout=0x7f030000;

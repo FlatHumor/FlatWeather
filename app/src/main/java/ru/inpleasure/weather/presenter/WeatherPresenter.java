@@ -44,14 +44,14 @@ public class WeatherPresenter
         api = new WeatherApi(context);
         
     }
-    
+
+    @SuppressWarnings("null")
     private boolean isConnectedToInternet()
     {
         NetworkInfo nInfo = ((ConnectivityManager)context
             .getSystemService(Context.CONNECTIVITY_SERVICE))
             .getActiveNetworkInfo();
-        return nInfo == null ? false :
-            nInfo.isConnectedOrConnecting();
+        return nInfo != null && nInfo.isConnectedOrConnecting();
     }
     
     @Override
@@ -103,6 +103,7 @@ public class WeatherPresenter
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     public void draw() {
         List<Weather> weatherList = model.getWeather();
         if (weatherList == null)
@@ -111,11 +112,12 @@ public class WeatherPresenter
     }
 
 
+    @SuppressWarnings("all")
     class WeatherLoader extends AsyncTask <Location, Void, Weather>
     {
         private Contract.View view;
 
-        public WeatherLoader(final Contract.View view) {
+        private WeatherLoader(final Contract.View view) {
             this.view = view;
         }
 
@@ -124,31 +126,7 @@ public class WeatherPresenter
         {
             WeatherDto weatherDto = api.getWeather(locations[0]);
             if (weatherDto == null) return null;
-            Weather weather = new Weather();
-            weather.setLongitude(weatherDto.getCoord().getLon());
-            weather.setLatitude(weatherDto.getCoord().getLat());
-            weather.setCountry(weatherDto.getSys().getCountry());
-            weather.setSunrise(weatherDto.getSys().getSunrise());
-            weather.setSunset(weatherDto.getSys().getSunset());
-            weather.setWeatherId(weatherDto.getWeather().get(0).getId());
-            weather.setWeatherMain(weatherDto.getWeather().get(0).getMain());
-            weather.setWeatherDescription(weatherDto.getWeather().get(0).getDescription());
-            weather.setWeatherIcon(weatherDto.getWeather().get(0).getIcon());
-            weather.setMainTemperature(weatherDto.getMain().getTemp());
-            weather.setMainHumidity(weatherDto.getMain().getHumidity());
-            weather.setMainPressure(weatherDto.getMain().getPressure());
-            weather.setMainMinTemperature(weatherDto.getMain().getTempMin());
-            weather.setMainMaxTemperature(weatherDto.getMain().getTempMax());
-            weather.setMainSeaLevel(weatherDto.getMain().getSeaLevel());
-            weather.setMainGroundLevel(weatherDto.getMain().getGrndLevel());
-            weather.setWindSpeed(weatherDto.getWind().getSpeed());
-            weather.setWindDegrees(weatherDto.getWind().getDeg());
-            weather.setCloudsAll(weatherDto.getClouds().getAll());
-            weather.setTimestamp(weatherDto.getDt());
-            weather.setSystemId(weatherDto.getId());
-            weather.setCityName(weatherDto.getName());
-            weather.setSystemCode(weatherDto.getCod());
-            return weather;
+            return Weather.createFromDto(weatherDto);
         }
 
         @Override
@@ -159,7 +137,8 @@ public class WeatherPresenter
             view.showWeather(weather);
         }
     }
-    
+
+    @SuppressWarnings("all")
     class BitmapDrawer extends AsyncTask<List<Weather>, Void, Bitmap>
     {
         private Contract.View view;
@@ -174,8 +153,7 @@ public class WeatherPresenter
         protected Bitmap doInBackground(List<Weather>... w)
         {
             List<Weather> weatherList = w[0];
-            Bitmap bitmap = drawer.drawDots(weatherList);
-            return bitmap;
+            return drawer.drawWeatherTwo(weatherList);
         }
         
         @Override

@@ -6,9 +6,10 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.Rect;
+import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.view.View;
-import android.widget.ImageView;
 
 import java.util.List;
 
@@ -34,8 +35,10 @@ public class WeatherDrawer implements Contract.Drawer
     private Paint barPaint;
     private Paint dotPaint;
     private Paint dotLabelPaint;
-    private Paint oxisPaint;
+    private Paint axisPaint;
     private Paint pathPaint;
+    private Paint maxTempPaint;
+    private Paint minTempPaint;
     private Path dotPath;
 
     public WeatherDrawer(Contract.View view)
@@ -58,10 +61,20 @@ public class WeatherDrawer implements Contract.Drawer
         dotLabelPaint.setColor(Color.WHITE);
         dotLabelPaint.setTextAlign(Paint.Align.CENTER);
         dotLabelPaint.setTextSize(20f);
-        oxisPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        oxisPaint.set(pathPaint);
-        oxisPaint.setStrokeWidth(1f);
-        oxisPaint.setColor(0xaaffffff);
+        axisPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        axisPaint.set(pathPaint);
+        axisPaint.setStrokeWidth(1f);
+        axisPaint.setColor(0xaaffffff);
+        minTempPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        minTempPaint.setTypeface(Typeface.SANS_SERIF);
+        minTempPaint.setTextAlign(Paint.Align.CENTER);
+        minTempPaint.setTextSize(30f);
+        minTempPaint.setColor(0xff2b7bba);
+        maxTempPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        maxTempPaint.setTypeface(Typeface.SANS_SERIF);
+        maxTempPaint.setTextAlign(Paint.Align.CENTER);
+        maxTempPaint.setTextSize(40f);
+        maxTempPaint.setColor(0xffff7d00);
         dotPath = new Path();
     }
     
@@ -78,12 +91,12 @@ public class WeatherDrawer implements Contract.Drawer
             Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         dotPath.moveTo(xPosition, (float)(centerY - firstValue * scale));
-        canvas.drawLine(0f, centerY, bitmapWidth, centerY, oxisPaint);
+        canvas.drawLine(0f, centerY, bitmapWidth, centerY, axisPaint);
         for (Weather weather : weatherList)
         {
             float scaledValue = (float)(centerY + weather.getMainTemperature() * scale);
             canvas.drawLine(xPosition + SEPARATOR_OFFSET, 0f,
-                xPosition + SEPARATOR_OFFSET, bitmapHeight, oxisPaint);
+                xPosition + SEPARATOR_OFFSET, bitmapHeight, axisPaint);
             canvas.drawPoint(xPosition, (float)(bitmapHeight - scaledValue), dotPaint);
             canvas.drawBitmap(getIconBitmap(weather.getWeatherIcon()),
                 xPosition - 100f, bitmapHeight - scaledValue - 100f, pathPaint);
@@ -92,6 +105,48 @@ public class WeatherDrawer implements Contract.Drawer
             canvas.drawText(weather.getMeasureTime(), xPosition, bitmapHeight, dotLabelPaint);
             dotPath.lineTo(xPosition, (float)(bitmapHeight - scaledValue));
             xPosition += DOT_OFFSET;
+        }
+        return bitmap;
+    }
+
+    public Bitmap drawWeatherTwo(List<Weather> weatherList)
+    {
+        final int BLOCK_COUNT = 7;
+        final int WIDTH = view.getWidth();
+        final int HEIGHT = Math.round(view.getHeight() * 0.2f);
+        final float CENTER_Y = HEIGHT / 2f;
+        final float PADDING = 10f;
+        float blockWidth = WIDTH / BLOCK_COUNT;
+        int iconSize = Math.round(blockWidth * 0.7f);
+        float xPosition = PADDING;
+        Bitmap bitmap = Bitmap.createBitmap(WIDTH, HEIGHT, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        canvas.drawColor(Color.WHITE);
+        Rect timeTextRect = new Rect();
+        Rect minTempRect = new Rect();
+        minTempPaint.getTextBounds("00", 0, 2, minTempRect);
+        dotLabelPaint.getTextBounds("00:00", 0, 4, timeTextRect);
+        float timeYPosition = PADDING + timeTextRect.bottom;
+        float minTempYPosition = HEIGHT - PADDING;
+        float maxTempYPosition = HEIGHT - PADDING - minTempRect.bottom - PADDING;
+        float iconYPosition = CENTER_Y - iconSize / 2f;
+        for (int i = weatherList.size() - 1; i >= 0; i--)
+        {
+            Weather weather = weatherList.get(i);
+
+            float blockCenter = xPosition + blockWidth * 0.5f;
+            canvas.drawText(weather.getMeasureTime(), blockCenter, timeYPosition, dotLabelPaint);
+
+            String iconName = weather.getWeatherIcon();
+            Bitmap iconBitmap = getScaledIcon(iconName, iconSize);
+            float iconX = blockCenter - iconSize / 2f;
+            canvas.drawBitmap(iconBitmap, iconX, iconYPosition, pathPaint);
+
+            canvas.drawText(Weather.formatTemperature(weather.getMainMinTemperature()),
+                    blockCenter, minTempYPosition, minTempPaint);
+            canvas.drawText(Weather.formatTemperature(weather.getMainMaxTemperature()),
+                    blockCenter, maxTempYPosition, maxTempPaint);
+            xPosition += blockWidth;
         }
         return bitmap;
     }
@@ -104,5 +159,13 @@ public class WeatherDrawer implements Contract.Drawer
         Bitmap scaledBitmap = Bitmap.createScaledBitmap(
             bitmap, ICON_SIZE, ICON_SIZE, false);
         return scaledBitmap;
+    }
+
+    private Bitmap getScaledIcon(String iconName, int scaledSize)
+    {
+        int iconResource = WeatherDto.WEATHER_ICONS.get(iconName);
+        Bitmap bitmap = BitmapFactory.decodeResource(
+                view.getContext().getResources(), iconResource);
+        return Bitmap.createScaledBitmap(bitmap, scaledSize, scaledSize, false);
     }
 }
