@@ -126,9 +126,9 @@ public class WeatherDrawer implements Contract.Drawer
         Rect minTempRect = new Rect();
         minTempPaint.getTextBounds("00", 0, 2, minTempRect);
         dotLabelPaint.getTextBounds("00:00", 0, 4, timeTextRect);
-        float timeYPosition = PADDING + timeTextRect.bottom;
+        float timeYPosition = PADDING + timeTextRect.height();
         float minTempYPosition = HEIGHT - PADDING;
-        float maxTempYPosition = HEIGHT - PADDING - minTempRect.bottom - PADDING;
+        float maxTempYPosition = HEIGHT - PADDING - minTempRect.height() - PADDING;
         float iconYPosition = CENTER_Y - iconSize / 2f;
         for (int i = weatherList.size() - 1; i >= 0; i--)
         {
