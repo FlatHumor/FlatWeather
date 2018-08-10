@@ -90,17 +90,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="none"
-        android:layout_below="@id/main_details_block">
         <ImageView
             android:id="@+id/main_draw_view"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:layout_below="@id/main_details_block"
             android:background="@drawable/weather_bg"
-            android:layout_height="100dp" />
-    </HorizontalScrollView>
-
-
+            android:elevation="20dp" />
+    
 </RelativeLayout>

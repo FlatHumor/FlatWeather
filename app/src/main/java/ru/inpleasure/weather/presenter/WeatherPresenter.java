@@ -159,7 +159,7 @@ public class WeatherPresenter
         @Override
         protected void onPostExecute(Bitmap bitmap) {
             View drawableView = view.getDrawableView();
-            drawableView.getLayoutParams().width = bitmap.getWidth();
+            //drawableView.getLayoutParams().width = bitmap.getWidth();
             drawableView.getLayoutParams().height = bitmap.getHeight();
             ((ImageView)drawableView).setImageBitmap(bitmap);
             view.draw();

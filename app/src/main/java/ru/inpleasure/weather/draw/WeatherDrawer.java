@@ -120,7 +120,7 @@ public class WeatherDrawer implements Contract.Drawer
         final int HEIGHT = Math.round(view.getHeight() * 0.2f);
         final float CENTER_Y = HEIGHT / 2f;
         final float PADDING = 20f;
-        float blockWidth = WIDTH / BLOCK_COUNT;
+        float blockWidth = (WIDTH - PADDING * 2)/ BLOCK_COUNT;
         int iconSize = Math.round(blockWidth * 0.7f);
         float xPosition = PADDING;
         Bitmap bitmap = Bitmap.createBitmap(WIDTH, HEIGHT, Bitmap.Config.ARGB_8888);
