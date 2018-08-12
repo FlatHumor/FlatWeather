@@ -93,8 +93,10 @@ public class WeatherPresenter
 
     @Override
     public void initialize() {
-        view.showWeather(model.getLastWeather());
         locator.start();
+        Weather weather = model.getLastWeather();
+        if (weather == null) return;
+        view.showWeather(model.getLastWeather());
     }
     
     @Override
